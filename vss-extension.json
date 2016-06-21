@@ -2,8 +2,9 @@
   "manifestVersion": 1,
   "id": "docdb-tasks",
   "name": "Publishing Tasks for DocumentDB",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "youngr6",
+  "public": true,
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
