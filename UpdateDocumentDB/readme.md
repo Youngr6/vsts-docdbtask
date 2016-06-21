@@ -7,7 +7,7 @@ This is a Powershell task, and the source will validate the DocumentDB and Colle
 To install the task directly into your VSTS account, you can use the following TFX command line:
 
 ```
-\DevOps\BuildTasks\Tasks> tfx build tasks upload --task-path UpdateDocumentDB --service-url https://ehieu.visualstudio.com/DefaultCollection
+\DevOps\BuildTasks\Tasks> tfx build tasks upload --task-path UpdateDocumentDB --service-url https://<vstsaccount>.visualstudio.com/DefaultCollection
 TFS Cross Platform Command Line Interface v0.3.21
 Copyright Microsoft Corporation
 > Personal access token:
