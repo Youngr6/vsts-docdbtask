@@ -1,0 +1,66 @@
+{
+  "manifestVersion": 1,
+  "id": "docdb-tasks",
+  "name": "Publishing Tasks for DocumentDB",
+  "version": "1.0.3",
+  "publisher": "youngr6",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "scopes": [
+    "vso.build",
+    "vso.serviceendpoint"
+  ],
+  "description": "A build and release extension that allows you to publish source files to a DocumentDB instance in Azure.",
+  "categories": [
+    "Build and release"
+  ],
+  "tags": [
+    "Extension",
+    "Marketplace",
+    "Publish",
+    "DocumentDB"
+  ],
+  "links": {
+    "support": {
+      "uri": "https://russellyoung.net"
+    }
+  },
+  "content":{
+    "details":{
+      "path":"overview.md"
+    }
+  },
+  "branding": {
+    "color": "rgb(36, 43, 50)",
+    "theme": "dark"
+  },
+  "icons": {
+    "default": "images/icon.png",
+    "large":"images/icon-large.png"
+  },
+  "files": [
+    {
+      "path": "UpdateDocumentDB"
+    },
+    {
+      "path":"images",
+      "addressable": true
+    }
+  ],
+  "contributions": [
+    {
+      "id": "UpdateDocumentDB",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "UpdateDocumentDB"
+      }
+    }
+  ]
+}
+
