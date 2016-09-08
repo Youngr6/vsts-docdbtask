@@ -38,7 +38,7 @@ StringToSign = HTTPVerb.ToLower() + “\n”
 function GetUTDate() {
  $date = get-date
  $date = $date.ToUniversalTime();
- return $date.ToString("ddd, d MMM yyyy HH:mm:ss \G\M\T")
+ return $date.ToString("r", [System.Globalization.CultureInfo]::InvariantCulture);
 }
 ```
 

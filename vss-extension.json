@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "docdb-tasks",
   "name": "Publishing Tasks for DocumentDB",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "youngr6",
   "public": true,
   "targets": [
