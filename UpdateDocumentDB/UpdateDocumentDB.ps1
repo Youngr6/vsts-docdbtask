@@ -96,8 +96,15 @@ Write-host ("Collection " + $collectionName)
         return
     }
 
-    $json = Get-Content -Path $sourceFile
-    PostDocument -document $json -dbname $databaseName -collection $collectionName
+    $files = Get-Item -Path $sourceFile
+
+    foreach($file in $files)
+    {
+        $json = Get-Content $file
+        PostDocument -document $json -dbname $databaseName -collection $collectionName
+
+         Write-Verbose -Verbose ("Document " + $file.Name + " was sent to documentDB database.")
+    }
 
     Write-Verbose -Verbose "Leaving DocumentDB Document Deploy step"
 
